@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>W3.CSS Template</title>
+<title>Projekt - Ramię robota - Michał Brotoń</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
@@ -13,105 +13,92 @@ html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
 
 <!-- Side Navigation -->
 <nav class="w3-sidebar w3-bar-block w3-collapse w3-white w3-animate-left w3-card" style="z-index:3;width:320px;" id="mySidebar">
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom w3-large"><img src="https://www.w3schools.com/images/w3schools.png" style="width:60%;"></a>
-  <a href="javascript:void(0)" onclick="w3_close()" title="Close Sidemenu" 
-  class="w3-bar-item w3-button w3-hide-large w3-large">Close <i class="fa fa-remove"></i></a>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-dark-grey w3-button w3-hover-black w3-left-align" onclick="document.getElementById('id01').style.display='block'">New Message <i class="w3-padding fa fa-pencil"></i></a>
-  <a id="myBtn" onclick="myFunc('Demo1')" href="javascript:void(0)" class="w3-bar-item w3-button"><i class="fa fa-inbox w3-margin-right"></i>Inbox (3)<i class="fa fa-caret-down w3-margin-left"></i></a>
-  <div id="Demo1" class="w3-hide w3-animate-left">
+ <!-- <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom w3-large"></a> -->
+  <a href="javascript:void(0)" onclick="w3_close()" title="Ukryj" 
+  class="w3-bar-item w3-button w3-hide-large w3-large">Ukryj <i class="fa fa-remove"></i></a>
+  <div id="Demo1" class="w3-animate-left">
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey" onclick="openMail('Borge');w3_close();" id="firstTab">
       <div class="w3-container">
-        <img class="w3-round w3-margin-right" src="/w3images/avatar3.png" style="width:15%;"><span class="w3-opacity w3-large">Borge Refsnes</span>
-        <h6>Subject: Remember Me</h6>
-        <p>Hello, i just wanted to let you know that i'll be home at...</p>
-      </div>
-    </a>
-     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey" onclick="openMail('Jane');w3_close();">
-      <div class="w3-container">
-        <img class="w3-round w3-margin-right" src="/w3images/avatar5.png" style="width:15%;"><span class="w3-opacity w3-large">Jane Doe</span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-      </div>
-    </a>
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey" onclick="openMail('John');w3_close();">
-      <div class="w3-container">
-        <img class="w3-round w3-margin-right" src="/w3images/avatar2.png" style="width:15%;"><span class="w3-opacity w3-large">John Doe</span>
-        <p>Welcome!</p>
+        <img class="w3-round w3-margin-right" src="https://www.w3schools.com/w3images/avatar3.png" style="width:15%;"><span class="w3-opacity w3-large">Michał Brotoń</span>
       </div>
     </a>
   </div>
-  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-paper-plane w3-margin-right"></i>Sent</a>
-  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-hourglass-end w3-margin-right"></i>Drafts</a>
-  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-trash w3-margin-right"></i>Trash</a>
+  <a href="https://www.linkedin.com/in/broton" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-paper-plane w3-margin-right"></i>Profil LinkedIn</a>
+
 </nav>
 
-<!-- Modal that pops up when you click on "New Message" -->
-<div id="id01" class="w3-modal" style="z-index:4">
-  <div class="w3-modal-content w3-animate-zoom">
-    <div class="w3-container w3-padding w3-red">
-       <span onclick="document.getElementById('id01').style.display='none'"
-       class="w3-button w3-red w3-right w3-xxlarge"><i class="fa fa-remove"></i></span>
-      <h2>Send Mail</h2>
-    </div>
-    <div class="w3-panel">
-      <label>To</label>
-      <input class="w3-input w3-border w3-margin-bottom" type="text">
-      <label>From</label>
-      <input class="w3-input w3-border w3-margin-bottom" type="text">
-      <label>Subject</label>
-      <input class="w3-input w3-border w3-margin-bottom" type="text">
-      <input class="w3-input w3-border w3-margin-bottom" style="height:150px" placeholder="What's on your mind?">
-      <div class="w3-section">
-        <a class="w3-button w3-red" onclick="document.getElementById('id01').style.display='none'">Cancel  <i class="fa fa-remove"></i></a>
-        <a class="w3-button w3-light-grey w3-right" onclick="document.getElementById('id01').style.display='none'">Send  <i class="fa fa-paper-plane"></i></a> 
-      </div>    
-    </div>
-  </div>
-</div>
-
 <!-- Overlay effect when opening the side navigation on small screens -->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="Close Sidemenu" id="myOverlay"></div>
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="Ukryj menu" id="myOverlay"></div>
 
 <!-- Page content -->
 <div class="w3-main" style="margin-left:320px;">
 <i class="fa fa-bars w3-button w3-white w3-hide-large w3-xlarge w3-margin-left w3-margin-top" onclick="w3_open()"></i>
-<a href="javascript:void(0)" class="w3-hide-large w3-red w3-button w3-right w3-margin-top w3-margin-right" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-pencil"></i></a>
 
 <div id="Borge" class="w3-container person">
   <br>
-  <img class="w3-round  w3-animate-top" src="/w3images/avatar3.png" style="width:20%;">
-  <h5 class="w3-opacity">Subject: Remember Me</h5>
-  <h4><i class="fa fa-clock-o"></i> From Borge Refsnes, Sep 27, 2015.</h4>
-  <a class="w3-button w3-light-grey" href="#">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
-  <a class="w3-button w3-light-grey" href="#">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
+  <h1><i class="fa fa-clock-o"></i> Ramię robota - "Tasker"</h1>
+
   <hr>
-  <p>Hello, i just wanted to let you know that i'll be home at lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <p>Best Regards, <br>Borge Refsnes</p>
+  <p>
+      Projekt został wykonany w 2 osobowym zespole, gdzie ja byłem odpowiedzialny za zaprogramowanie mikrokontrolera, a druga osoba za konstrukcję. Zaprezentowaliśmy go na nowosądeckim Pikniku Naukowym w roku 2016.
+  </p>
+      <img src="img/taskernapikniku.jpg" class="center">
+  <h3>Konstrukcja</h3>
+  <p>Najpierw wykonaliśmy potrzebne obliczenia i rysunki techniczne. Następnie z blachy aluminiowej o grubości 2mm, za pomocą obróbki ręcznej, wykonaliśmy elementy ramienia. Wyzwanie stanowił chwytak, ponieważ z założenia chcieliśmy jak najwięcej wykonać sami, nie korzystając z gotowych rozwiązań, więc postawiliśmy na druk 3D. Po wykonaniu modelu w 3D Solidworks, wydrukowaliśmy chwytak.</p>
+  <img src="img/chwytak1.jpg" class="center">
+  <img src="img/chwytak2.jpg" class="center">
+  <p>Chcieliśmy, aby ramię miało 6 stopni swodoby - bark, łokieć, nadgarstek i dłoń (czyli chwytak). Dodatkowo bark oraz dłoń posiadały obrót wokół własnej osi.</p>
+  <img src="img/taskerkonstrukcja.jpg" class="center">
+  <p>Ramię osadziliśmy na łożysku znajdującym się w podstawie. Jako napęd służyły serwomechanizmy TowerPRO MG995, czyli najtańsze z możliwych serwomechanizmów z metalowymi trybami i dużym momentem. U podstawy (do barku) użyliśmy 2 serwomechanizmów, ze względu na duże obciążenie.</p>
+  
+  <h3>Sterowanie</h3>
+  <p>
+      Wpadliśmy na pomysł, aby wykorzystać gamepada od konsoli PlayStation2 do kontrolowania manipulatora. Wykorzystałem w tym celu bibliotekę <a href="http://www.billporter.info/2010/06/05/playstation-2-controller-arduino-library-v1-0/" target="_blank">PS2X</a>. Analogowe joysticki sterowały ramieniem z różną prędkością - im większy odchył joysticka, tym większa prędkość.
+  </p>
+  <p>
+     W czasie programowania, wpadłem na pomysł, aby dołożyć taką funkcjonalność jak nagrywanie ruchów. W tym celu zamontowaliśmy panel z wyświetlaczem alfanumerycznym oraz moduł microSD. 
+  </p>
+      <img src="img/wyswietlacz.jpg" class="center">
+  <p>
+      Przyciski (które później były podpisane, niestety nie dysponuję zdjęciem):
+  </p>
+         <ul>
+          <li>Play - odtworzenie nagranej wcześniej sekwencji ruchów</li>
+          <li>Rec - przejście w tryb nagrywania</li>
+          <li>Reset - restart urządzenia</li>
+          <li>Czerwony przełącznik - on/off</li>
+          </ul>
+  <p>
+      Układ zaprogramowałem w ten sposób, że po włączeniu automatycznie ustawiony był tryb ręczny. Można było swobodnie sterować ramieniem. Po przejściu w tryb nagrywania, po naciśnięciu przycisku X na gamepadzie, zapisywał się krok. Z takich kroków można było złożyć całą sekwencję ruchów. Kroki zapisywały się do pliku CSV na karcie microSD, która była umieszczona w module podpiętym do mikrokontrolera. Jedna linia to jeden krok. W jednej linii znajdowały się wartości, które odpowiadały położeniu (0-180 stopni) każdego z serwomechanizmów. Wyglądało to mniej więcej tak:
+  </p>
+  <p>
+      <i>
+          156,124,45,4,180,115<br>
+158,127,45,4,180,36<br>
+158,127,105,32,180,36<br>
+96,94,41,1,180,36<br>
+98,115,41,0,180,36<br>
+98,115,41,0,180,136<br>
+98,85,41,0,180,136<br>
+159,105,41,0,180,136<br>
+157,121,33,0,180,136<br>
+157,121,33,0,180,36<br>
+157,121,122,0,180,36<br>
+97,121,122,0,180,36<br>
+      </i>
+  </p>
+  <p>
+      Co prawda użyliśmy 7 serwomechanizmów, jednak w podstawie 2 serwomechanizmy były na przeciwko siebie, trzymając jeden element. Więc gdy jeden miał wartość <b>x</b>, drugi miał <b>180-x</b>. Przy odtwarzaniu nagranej sekwencji, kontroler wczytuje każdy krok i gdy zostanie on spełniony, przechodzi do następnego. Jednak nie wykorzystałem tutaj prostej funkcji <i>serwo.write(x);</i>, ponieważ ramię by "wystrzeliło" na swoją pozycję. W każdym kroku wykonywana była pętla, która "dodawała" do aktualnej pozycji każdego serwa ustaloną wartość (która determinowała szybkość z jaką sekwencja ma zostać odtworzona) co określony czas (ułamki sekundy).
+  </p>
+  <p>Sercem układu był klon mikrokontrolera Arduino MEGA, ze względu na dużą ilość I/O. Wszystko zostało dosłownie upchnięte w podstawie.</p>
+  <p>Programowałem na platformie Arduino IDE. Serwomechanizmy zasililiśmy zasilaczem komputerowym, natomiast mikrokontroler ładowarką do telefonu. Ramie przy większym obciążeniu pobiera do 5A, zaś przy normalnej pracy ~2,5A.</p>
+  <img src="img/projektowanie.jpg" class="center">
+  <p>Poniżej krótki film, na którym widać działanie ramienia. Nie jest to oficjalna prezentacja projektu, jedynie film "pamiątkowy".</p>
+  <center><iframe width="560" height="315" src="https://www.youtube.com/embed/0xlfSAsAfdk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+  <hr>
+  
 </div>
 
-<div id="Jane" class="w3-container person">
-  <br>
-  <img class="w3-round w3-animate-top" src="/w3images/avatar5.png" style="width:20%;">
-  <h5 class="w3-opacity">Subject: None</h5>
-  <h4><i class="fa fa-clock-o"></i> From Jane Doe, Sep 25, 2015.</h4>
-  <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
-  <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
-  <hr>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <p>Forever yours,<br>Jane</p>
-</div>
-
-<div id="John" class="w3-container person">
-  <br>
-  <img class="w3-round w3-animate-top" src="/w3images/avatar2.png" style="width:20%;">
-  <h5 class="w3-opacity">Subject: None</h5>
-  <h4><i class="fa fa-clock-o"></i> From John Doe, Sep 23, 2015.</h4>
-  <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
-  <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
-  <hr>
-  <p>Welcome.</p>
-  <p>That's it!</p>
-</div>
      
 </div>
 
